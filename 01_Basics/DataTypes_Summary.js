@@ -10,6 +10,7 @@ let obj = {  // objects
 console.log(obj);
 
 
+
 const func = function () {
     console.log( "hello world!");
     

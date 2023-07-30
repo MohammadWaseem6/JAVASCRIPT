@@ -20,3 +20,5 @@ const anotherString3 = "abcdeferjdvjdfvjk";
 console.log(anotherString3.replace('er', '__'))
 const anotherString4="bbbbbbbbbbbbbbbbbb"
 console.log(anotherString4.includes('vv'));
+const str = " hello_abc_def_ghr "
+console.log(str.split('_'));

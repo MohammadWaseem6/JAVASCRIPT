@@ -45,13 +45,11 @@ user.greetingtwo();
 
 // End of code
 
-// Documentation:
+/* Documentation:*/
 // This code demonstrates the usage of object literals in JavaScript to create a 'user' object.
 // The object contains various properties such as 'name', 'fullname', 'age', 'address', 'loggedin', and 'email'.
 // Additionally, a unique Symbol property is used as a key within the object.
 // The code also showcases how to add methods to objects using function expressions.
 // Two methods, 'greeting' and 'greetingtwo', are added to the 'user' object to display different greetings.
 // The 'greeting' method prints a simple greeting message, while 'greetingtwo' uses string interpolation to greet with the user's name.
-// Comments throughout the code provide explanations for each section's functionality.
-// Uncommenting lines like 'user.email = "hello@abc";' and 'Object.freeze(user);' demonstrates property modification and object freezing.
-// The code aims to showcase key concepts related to objects and methods in JavaScript.
+

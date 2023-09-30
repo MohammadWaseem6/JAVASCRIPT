@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#banner {
+    background-color: #ad3e3e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#banner span {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,0 +1,38 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Github User Info</title>
+    </head>
+    <body style="background-color: #212121; color: #fff">
+        <div id="user-card" style="display: none">
+        <img id="user-avatar" src="" alt="User Avatar" />
+        <p>Followers: <span id="followers-count"></span></p>
+        </div>
+        <button id="fetch-data-button">Click here to Fetch User Data</button>
+
+        <script>
+        const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+        const xhr = new XMLHttpRequest();
+        const userCard = document.getElementById("user-card");
+        const userAvatar = document.getElementById("user-avatar");
+        const followersCount = document.getElementById("followers-count");
+        const fetchDataButton = document.getElementById("fetch-data-button");
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+            const data = JSON.parse(xhr.responseText);
+            userAvatar.src = data.avatar_url;
+            followersCount.textContent = data.followers;
+            userCard.style.display = "block";
+            }
+        };
+
+        fetchDataButton.addEventListener("click", function () {
+            xhr.open("GET", requestUrl);
+            xhr.send();
+        });
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>React</title>
+    </head>
+    <body style="background-color: cornflowerblue;">
+        <button>Button Clicked</button>
+    </body >
+    <script>
+        class React {
+        constructor(liabrary) {
+            this.liabrary = liabrary;
+            this.server = "http://localhost:3000";
+            document
+            .querySelector("button") // Corrected the button tag to lowercase
+            .addEventListener("click", this.handleClick.bind(this));
+        }
+        handleClick() {
+            console.log("Button clicked");
+            console.log(this.server);
+        }
+        }
+
+        // Usage of the React class
+        const myReactApp = new React("Your Library Name");
+    </script>
+    </html>

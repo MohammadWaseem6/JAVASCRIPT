@@ -14,7 +14,7 @@
             this.liabrary = liabrary;
             this.server = "http://localhost:3000";
             document
-            .querySelector("button") // Corrected the button tag to lowercase
+            .querySelector("button")
             .addEventListener("click", this.handleClick.bind(this));
         }
         handleClick() {
@@ -22,8 +22,6 @@
             console.log(this.server);
         }
         }
-
-        // Usage of the React class
         const myReactApp = new React("Your Library Name");
     </script>
     </html>
